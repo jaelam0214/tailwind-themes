@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "target": "esnext",
+    "sourceMap": false,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "types": [
+      "typescript",
+    ],
+    "lib": [
+      "esnext",
+      "dom",
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/index.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
