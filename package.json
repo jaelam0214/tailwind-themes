@@ -1,0 +1,68 @@
+{
+  "name": "tw-themes-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "config.js",
+    "config.d.ts",
+    "plugin.js",
+    "plugin.d.ts",
+    "colors.js",
+    "colors.d.ts"
+  ],
+  "scripts": {
+    "build": "tsup src --dts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaelam0214/tailwind-themes.git"
+  },
+  "author": "Jae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaelam0214/tailwind-themes/issues"
+  },
+  "homepage": "https://github.com/jaelam0214/tailwind-themes#readme",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "color": "^4.2.3",
+    "color2k": "^2.0.3",
+    "deepmerge": "^4.3.1",
+    "flat": "^6.0.1",
+    "lodash.foreach": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.mapkeys": "^4.6.0",
+    "lodash.omit": "^4.5.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.6",
+    "@types/flat": "^5.0.5",
+    "@types/lodash.foreach": "^4.5.9",
+    "@types/lodash.get": "^4.4.9",
+    "@types/lodash.kebabcase": "^4.1.9",
+    "@types/lodash.mapkeys": "^4.6.9",
+    "@types/lodash.omit": "^4.5.9",
+    "tailwindcss": "^3.4.13",
+    "tsc": "^2.0.4",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}
