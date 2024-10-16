@@ -1,6 +1,6 @@
 {
   "name": "tw-themes-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -37,8 +37,7 @@
     "deepmerge": "^4.3.1",
     "flat": "^5.0.2",
     "lodash": "^4.17.21",
-    "tailwind-merge": "^2.5.4",
-    "tailwind-variants": "^0.2.1"
+    "tailwind-merge": "^2.5.4"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.4.0"
