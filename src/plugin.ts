@@ -5,11 +5,7 @@
 
 import Color from 'color'
 import plugin from 'tailwindcss/plugin.js'
-import get from 'lodash.get'
-import omit from 'lodash.omit'
-import forEach from 'lodash.foreach'
-import mapKeys from 'lodash.mapkeys'
-import kebabCase from 'lodash.kebabcase'
+import { forEach, get, kebabCase, mapKeys, omit } from 'lodash'
 import deepMerge from 'deepmerge'
 
 import { semanticColors, commonColors } from './colors'
