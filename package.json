@@ -1,17 +1,11 @@
 {
   "name": "tw-themes-plugin",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "",
   "main": "src/index.ts",
   "sideEffects": false,
   "files": [
-    "dist",
-    "config.js",
-    "config.d.ts",
-    "plugin.js",
-    "plugin.d.ts",
-    "colors.js",
-    "colors.d.ts"
+    "dist"
   ],
   "scripts": {
     "build": "tsup src --dts",
@@ -43,6 +37,7 @@
     "tailwindcss": ">=3.4.0"
   },
   "devDependencies": {
+    "@swc/core": "^1.7.36",
     "@types/color": "^3.0.6",
     "@types/flat": "^5.0.2",
     "@types/lodash": "^4.17.10",
@@ -54,7 +49,9 @@
   },
   "tsup": {
     "clean": true,
-    "target": "es2019",
+    "minify": true,
+    "treeshake": true,
+    "target": "es5",
     "format": [
       "cjs",
       "esm"

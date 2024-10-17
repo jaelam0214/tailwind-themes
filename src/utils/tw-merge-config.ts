@@ -1,4 +1,4 @@
-import type { Config } from 'tailwind-merge'
+import type { Config } from 'tailwind-merge/es5'
 export const COMMON_UNITS = ['small', 'medium', 'large']
 
 export const twMergeConfig: Partial<Config<string, string>> = {
