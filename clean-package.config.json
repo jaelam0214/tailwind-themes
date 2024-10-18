@@ -9,15 +9,15 @@
         "import": "./dist/index.mjs",
         "require": "./dist/index.js"
       },
-      "./plugin": {
-        "types": "./dist/plugin.d.ts",
-        "import": "./dist/plugin.mjs",
-        "require": "./dist/plugin.js"
-      },
       "./colors": {
-        "types": "./dist/colors.d.ts",
-        "import": "./dist/colors.mjs",
-        "require": "./dist/colors.js"
+        "types": "./dist/theme/colors.d.ts",
+        "import": "./dist/theme/colors.mjs",
+        "require": "./dist/theme/colors.js"
+      },
+      "./transformer": {
+        "types": "./dist/variants/transformer.d.ts",
+        "import": "./dist/variants/transformer.mjs",
+        "require": "./dist/variants/transformer.js"
       },
       "./package.json": "./package.json"
     }
