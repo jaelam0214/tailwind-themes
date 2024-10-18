@@ -33,12 +33,6 @@ export type StringToBoolean<T> = T extends 'true' | 'false' ? boolean : T
 
 export type CnOptions = ClassValue[]
 
-export type CnReturn = string | undefined
-
-export declare const cnBase: <T extends CnOptions>(...classes: T) => CnReturn
-
-export declare const cn: <T extends CnOptions>(...classes: T) => (config?: TWMConfig) => CnReturn
-
 // compare if the value is true or array of values
 export type isTrueOrArray<T> = T extends true | unknown[] ? true : false
 

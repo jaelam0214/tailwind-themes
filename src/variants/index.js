@@ -1,5 +1,5 @@
 import { twMerge as twMergeBase, extendTailwindMerge } from 'tailwind-merge/es5'
-
+import { twMergeConfig } from '../theme'
 import {
   isEqual,
   isEmptyObject,
@@ -12,19 +12,19 @@ import {
 
 export const defaultConfig = {
   twMerge: true,
-  twMergeConfig: {},
+  twMergeConfig: twMergeConfig,
   responsiveVariants: false,
 }
 
-export const voidEmpty = (value) => (!!value ? value : undefined)
+const voidEmpty = (value) => (!!value ? value : undefined)
 
-export const cnBase = (...classes) => voidEmpty(flatArray(classes).filter(Boolean).join(' '))
+const cnBase = (...classes) => voidEmpty(flatArray(classes).filter(Boolean).join(' '))
 
 let cachedTwMerge = null
 let cachedTwMergeConfig = {}
 let didTwMergeConfigChange = false
 
-export const cn =
+const cn =
   (...classes) =>
     (config) => {
       if (!config.twMerge) {

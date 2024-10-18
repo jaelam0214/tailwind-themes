@@ -10,3 +10,4 @@ export {
 } from './classes'
 export { colorVariants } from './variants'
 export { COMMON_UNITS, twMergeConfig } from './tw-merge-config'
+export { cn } from './cn'
